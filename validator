@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RequestModel",
+  "type": "object",
+  "required": ["name", "email", "mobile-number"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "email": { "type": "string", "format": "email" },
+    "mobile-number": { "type": "integer", "minimum": 1000000000, "maximum": 9999999999 }
+  },
+  "additionalProperties": false
+}
