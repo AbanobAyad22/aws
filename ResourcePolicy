@@ -5,7 +5,7 @@
       "Effect": "Deny",
       "Principal": "*",
       "Action": "execute-api:Invoke",
-      "Resource": "arn:aws:execute-api:eu-central-1:110844250998:mbnjo4ife4/dev/myapi",
+      "Resource": "arn:aws:execute-api:us-east-1:110844250998:oav7jdobgg/*/POST/resource1",
       "Condition": {
         "IpAddress": {
           "aws:SourceIp": ["41.129.190.99/32"]
@@ -16,7 +16,7 @@
       "Effect": "Allow",
       "Principal": "*",
       "Action": "execute-api:Invoke",
-      "Resource": "arn:aws:execute-api:eu-central-1:110844250998:mbnjo4ife4/dev/myapi"
+      "Resource": "arn:aws:execute-api:us-east-1:110844250998:oav7jdobgg/*/POST/resource1"
     }
   ]
 }
