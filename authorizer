@@ -19,7 +19,7 @@ def lambda_handler(event, context):
     token = event.get("authorizationToken", "")
     method_arn = event["methodArn"]
 
-    valid_token = "Bearer mysecrettoken"
+    valid_token = "djfjksgdf5143f31fd3h1315552@2112"
 
     if token == valid_token:
         return generate_policy("user", "Allow", method_arn)
